@@ -86,7 +86,7 @@ h2{
     transform: translateX(-100%);
 }
 #menu-bar:checked ~ footer{
-    transform: translateX(-100%);
+    transform: translateX(0%);
 }
 
 @media(min-width:1024px){
@@ -251,6 +251,7 @@ h2{
 }
 
 /*Estilos de footer*/
+
 #barra{
     background-color: rgb(37, 23, 1);
     height: 50px;
