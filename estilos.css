@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap');
+
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen';
+}
+
+h1{
+    font-family: 'Jost';
+}
+
+/*Estilos banner lateral*/
+#parte1{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.icon-menu{
+    color: #000000;
+    padding: 10px;
+}
+
+#parte1 label{
+    float: left;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+#parte1 p{
+    margin-bottom: 3px;
+}
+
+#parte1 img{
+    margin: 17% 22.5% 3% 22.5%;
+    width: 150px;
+}
+
+#blanco{
+    background-color: white;
+}
+
+#menu-bar{
+    display: none;
+}
+
+#parte1 a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgb(177, 165, 147);
+}
+
+#parte1 a:hover{
+    background: rgba(177, 165, 147, 0.553);
+    cursor: pointer;
+}
+
+.menu{
+    left: 0;
+    transition: all 1s;
+    transform: translateX(0%);
+}
+
+#menu-bar:checked ~ .contenedor{
+    transform: translateX(-100%);
+}
+#menu-bar:checked ~ #fondo_b{
+    transform: translateX(-100%);
+}
+#menu-bar:checked ~ footer{
+    transform: translateX(-100%);
+}
+
+@media(min-width:1024px){
+    .contenedor{
+        position: static;
+        transform: translateX(0%);
+        float: left;
+        width: 100%;
+    }
+    .menu a{
+        border: none;
+    }
+    #parte1 label{
+        display: none;
+    }
+    footer{
+        position: static;
+        transform: translateX(0%);
+        float: left;
+    }
+}
+
+/*Estilos sector de información*/
+/*Estilos de presentacion*/
+#presentacion{
+    background-image: url(imagenes/Fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: aliceblue;
+    padding: 2%;
+}
+
+#titulo1{
+    font-size: 340%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#titulo2{
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+/*Estilos de info sobre mi*/
+#sobre_mi{
+    padding: 6%;
+    background-color: rgba(243, 236, 228, 0.402);
+}
+
+.titulos_v{
+    padding-bottom: 10px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.titulos_v2{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sobre_mi p{
+    display: table-cell;
+    font-size: 16px;
+}
+
+/*estilos de Educacion*/
+#educ{
+    padding: 3% 6% 3% 6%;
+    background-color: rgba(216, 216, 216, 0.605);
+}
+
+#educ_inf{
+    display: table;
+}
+
+.celda{
+    width: 100%;
+    padding-left: 30px;
+    display: table;
+}
+
+.celda li{
+    font-size: 25px;
+    margin: 10px;
+    height: 100px;
+    display: table-cell;
+}
+
+.celda p{
+    font-size: 16px;
+    padding-left: 45px;
+}
+
+/*estilos de idiomas*/
+#idiom{
+    padding: 3% 6% 3% 6%;
+    background-color: rgba(216, 216, 216, 0.405);
+}
+
+.celda2{
+    width: 100%;
+    padding-left: 30px;
+    display: table;
+}
+
+.celda2 h5{
+    font-size: 25px;
+    margin: 10px;
+    height: 100px;
+    display: table-cell;
+}
+
+.celda2 p{
+    font-size: 16px;
+    padding-left: 45px;
+}
+
+/*estilos de cerfiticadoss*/
+#certif{
+    padding: 3% 6% 3% 6%;
+    background-color: rgba(216, 216, 216, 0.205);
+}
+
+#titulos_v3{
+    padding-bottom: 10px;
+    width: 300px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.celdas_m{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.celdas_min{
+    margin-bottom: 14px;
+}
+
+.celdas_min p {
+    margin-bottom: 3px;
+}
+
+/*Estilos de mas info*/
+#more{
+    padding: 3% 6% 3% 6%;
+    background-color: rgba(247, 240, 225, 0.1);
+}
+
+.titulos_v2{
+    padding-bottom: 10px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.celda3{
+    display: block;
+}
+
+.celda3 li{
+    font-size: 16px;
+    list-style: circle outside;
+}
+
+/*Estilos de footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(37, 23, 1);
+    text-align: center;
+    height: 50px;
+}
+
+#barra{
+    background-color: rgb(37, 23, 1);
+    height: 50px;
+}
+
+.icon-phone{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.icon-envelope{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.icon-linkedin-square{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+/*Estilos de paneles emergentes*/
+
+button{
+    background-color: rgba(177, 165, 147, 0.553);
+    margin: 15px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.modal-container{
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.moda{
+    background-color: #fff;
+    width: 300px;
+    height: 170px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.moda h3{
+    margin: 0;
+}
+
+.moda p{
+    opacity: 0.7;
+    font-size: 14px;
+}
