@@ -86,6 +86,7 @@ h2{
 #menu-bar:checked ~ .contenedor{
     transform: translateX(-100%);
 }
+
 #menu-bar:checked ~ #fondo_b{
     transform: translateX(-100%);
 }
