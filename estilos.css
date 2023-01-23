@@ -23,7 +23,6 @@ h2{
 
 /*Estilos banner lateral*/
 #parte1{
-    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -70,10 +69,6 @@ h2{
     transform: translateX(0%);
 }
 
-#menu-bar:checked ~ .contenedor{
-    transform: translateX(100%);
-}
-
 @media(min-width:1024px){
     .contenedor{
         position: static;
@@ -97,9 +92,6 @@ h2{
         width: 100%;
     }
     #menu-bar:checked ~ .contenedor{
-        transform: translateX(0%);
-    }
-    #menu-bar:checked ~ .blanc_completar{
         transform: translateX(0%);
     }
 }
